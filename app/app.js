@@ -1,8 +1,8 @@
 module.exports = {
 	aritGeo: (arg) => {
 
-				const [value1, value2] = arg;
-		const Diff = value2 - value1;
+				let [value1, value2] = arg;
+				let Diff = value2 - value1;
 
 		
 		if ( arg.length === 0) {
@@ -15,12 +15,12 @@ module.exports = {
 				return geo(arg)
 			}
 		}
-        return 'Aritmetic'
+        return 'Aritmetic';
          
         
         function geo(arg) {
-        	const [value1, value2] = arg;
-            const Ratio = value2 / value1;
+        	let [value1, value2] = arg;
+            let Ratio = value2 / value1;
             
             for(let i = 1; i < arg.length - 1; i++) {
             	if(Ratio === arg[i + 1] / arg[i]) {
